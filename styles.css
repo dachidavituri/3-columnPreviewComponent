@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    font-size: 15px;
+    padding: 2rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+}
+.box1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0 ;
+    padding: 48px;
+}
+.box2{
+    background-color: hsl(184, 100%, 22%);;
+    padding: 48px;
+}
+.box3{
+    background-color: hsl(179, 100%, 13%);
+    padding: 48px;
+    border-radius: 0 0 10px 10px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+}
+/* for all container */
+.icon{
+    width: 64px;
+    height: 40px;
+}
+.inf-button{
+    background-color: white;
+    border: none;
+    width: 146px;
+    height: 48px;
+    border-radius: 35px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    margin-top: 30px;
+}
+.first{
+    color: #e38826;
+}
+.first:hover{
+    background-color: #e38826;
+    color: white;
+    border: 2px solid white;
+}
+.second{
+    color: #006970;
+}
+.second:hover{
+    background-color: #006970;
+    color: white;
+    border: 2px solid white;
+}
+.third{
+    color: #004241;
+}
+.third:hover{
+    background-color: #004241;
+    color: white;
+    border: 2px solid white;
+}
+.title{
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Big Shoulders Display";
+    line-height: 27px;
+    margin-top: 10px;
+}
+.description{
+    line-height: 26px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: "Lexend Deca"; 
+}
+@media only screen and (min-width: 1024px) {
+    .main-container{
+        flex-direction: row;
+        max-width: 950px;  
+    }
+    .content{
+        gap: 45px;
+    }
+    .box1{
+        border-radius: 10px 0 0 10px;
+    }
+    .box3{
+        border-radius: 0 10px 10px 0;
+    }
+    .inf-button{
+        margin-top: 40px;
+    }
+
+
+    
+}
